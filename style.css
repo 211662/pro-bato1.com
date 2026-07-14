@@ -1,0 +1,272 @@
+/* =====================================================
+   BL Manga Bato – Main Stylesheet
+   Host: bato1.com
+   ===================================================== */
+
+/* ── Reset & Base ─────────────────────────────────── */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #182335;
+  color: #eaeaea;
+  background-image: url(./assets/body-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: #ff5f5f;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.7;
+  color: #ddd;
+  font-size: 17px;
+}
+
+ul {
+  color: #ccc;
+  font-size: 17px;
+}
+
+img.aligncenter {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ── Header ───────────────────────────────────────── */
+header {
+  background: #182335;
+  border-bottom: 1px solid #1e2c43;
+  padding: 12px 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff5f5f;
+}
+
+.logo img {
+  height: 21px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #c6cacf;
+  font-size: 17px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.search input {
+  background: #d5e1e7;
+  border: 1px solid #333;
+  color: #1a1a1a;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+/* ── Layout ───────────────────────────────────────── */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ── Typography / Sections ────────────────────────── */
+.section-title {
+  font-size: 24px;
+  margin: 25px 0 15px;
+  border-left: 4px solid #ff5f5f;
+  padding-left: 10px;
+}
+
+h1.section-title {
+  font-size: 32px;
+}
+
+/* ── Manga Grid ───────────────────────────────────── */
+.manga-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.manga-card {
+  background: #161616;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform .2s;
+}
+
+.manga-card:hover {
+  transform: translateY(-4px);
+}
+
+.manga-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.manga-info {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.manga-info strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* ── CTA Buttons ──────────────────────────────────── */
+.cta-group {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff6b6b, #ff3b3b);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(255, 95, 95, 0.35);
+  transition: all .2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(255, 95, 95, 0.45);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  border: 1px solid #ff5f5f55;
+  font-weight: 600;
+  transition: all .2s ease;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(255, 95, 95, 0.45);
+}
+
+/* ── Social Bar ───────────────────────────────────── */
+.social-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 22px 0;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 36px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.social-btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.social-count {
+  opacity: .85;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* Brand colours */
+.sb-facebook  { background: #1877f2; }
+.sb-x         { background: #000; }
+.sb-messenger { background: #0084ff; }
+.sb-reddit    { background: #ff4500; }
+.sb-whatsapp  { background: #25d366; }
+.sb-telegram  { background: #229ed9; }
+
+.social-btn:hover { opacity: .9; }
+
+/* ShareThis override */
+.sharethis-inline-share-buttons { margin: 0; }
+
+/* Hide fallback when ShareThis loads */
+.sharethis-loaded .social-fallback { display: none; }
+
+/* ── Footer ───────────────────────────────────────── */
+footer {
+  background: #111;
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
+
+/* ── Table ─────────────────────────────────────────── */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+  color: #ddd;
+  margin: 16px 0;
+}
+
+table th {
+  background: #1e2c43;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+table td {
+  padding: 8px 12px;
+}
+
+table tr:nth-child(even) td {
+  background: #1a2436;
+}
+
+/* ── Responsive ───────────────────────────────────── */
+@media (max-width: 768px) {
+  nav { display: none; }
+}
+
+@media (max-width: 600px) {
+  .cta-group {
+    flex-direction: column;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
