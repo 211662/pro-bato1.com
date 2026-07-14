@@ -1,4 +1,4 @@
-# robots.txt for BL Manga Bato (xbato.co.uk)
+# robots.txt for Batoto (xbato.co.uk)
 # Last updated: 2026
 
 User-agent: *
